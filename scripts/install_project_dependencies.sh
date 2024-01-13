@@ -21,7 +21,6 @@ TABLE_AUTOCREATE="true"
 TABLE_AUTOUPDATE="false"
 DEVELOPMENT="false"
 APP_NAME="Shop"
-PORT=3000
 EOF
 
 npm run build
