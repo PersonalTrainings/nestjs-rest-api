@@ -6,4 +6,4 @@ pm2 delete all || echo 'nothing to delete'
 
 cd /home/ec2-user/express-app
 
-pm2 start npm -- run start:prod --name 'nest-js-api' -f -i 0
+export PORT=80; export NODE_ENV=production; pm2 start dist/main.js --name 'nest-js-api' -f -i 0
