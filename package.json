@@ -10,6 +10,7 @@
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
+    "pm2:start": "pm2 delete all || echo 'nothing to delete' && export PORT=8080; export NODE_ENV=production; pm2 start dist/main.js --name 'nest-js-api' -f -i 0",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
